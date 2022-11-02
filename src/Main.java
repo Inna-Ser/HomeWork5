@@ -32,5 +32,19 @@ public class Main {
         else {
             System.out.println(year + " год не является високосным.");
         }
+        // Доставка карт
+        int deliveryDistance = 95;
+        if (deliveryDistance < 20) {
+            System.out.println("Доставка карты займет одни сутки.");
+        }
+        else if (deliveryDistance > 20 && deliveryDistance < 60) {
+            System.out.println("Доставка карты займет двое суток.");
+        }
+        else if (deliveryDistance > 60 && deliveryDistance < 100) {
+            System.out.println("Доставка карты займет трое суток.");
+        }
+        else {
+            System.out.println("Доставки нет.");
+        }
+        }
     }
-}
