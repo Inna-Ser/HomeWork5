@@ -33,14 +33,15 @@ public class Main {
             System.out.println(year + " год не является високосным.");
         }
         // Доставка карт
-        int deliveryDistance = 95;
+        int deliveryDistance = 81;
+        int distanceStep = 40;
         if (deliveryDistance < 20) {
             System.out.println("Доставка карты займет одни сутки.");
         }
-        else if (deliveryDistance > 20 && deliveryDistance < 60) {
+        else if (deliveryDistance >= 20 && deliveryDistance <= 20 + distanceStep) {
             System.out.println("Доставка карты займет двое суток.");
         }
-        else if (deliveryDistance > 60 && deliveryDistance < 100) {
+        else if (deliveryDistance >= 20 + (distanceStep * 1) && deliveryDistance <= 20 + (distanceStep * 2)) {
             System.out.println("Доставка карты займет трое суток.");
         }
         else {
